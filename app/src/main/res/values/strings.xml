@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Qrsc</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="home">Home</string>
+    <string name="map">Map</string>
+    <string name="signed_out">signed_out</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+
+    <string name="auth_failed">Authentication failed</string>
+
+    <string name="sign_in">Sign In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="verify_email">Verify Email</string>
+    <string name="emailPassword">Email Password</string>
+    <string name="I_am_customer_button">I am a customer</string>
+    <string name="I_am_driver_button">I am a driver</string>
+
+    <string name="firebase_status_fmt">Firebase User: %s</string>
+    <string name="firebase_user_management">Firebase User Management</string>
+
+    <string name="emailpassword_status_fmt">Email User: %1$s (verified: %2$b)</string>
+    <string name="emailpassword_title_text">Email and Password</string>
+    <string name="welcome_text_view">user sucessfully authenticated</string>
+
+
+
+
+</resources>
