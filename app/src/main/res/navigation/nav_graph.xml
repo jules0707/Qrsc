@@ -3,6 +3,7 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
     app:startDestination="@+id/home_dest">
 
 
@@ -27,10 +28,22 @@
         android:label="@string/map"
         tools:layout="@layout/map_fragment" />
 
-    <fragment
-        android:id="@+id/emailPassword_dest"
-        android:name="coop.qrsc.EmailPasswordFragment"
-        android:label="@string/emailPassword"
-        tools:layout="@layout/emailpassword_fragment" />
+    <navigation
+        android:id="@+id/login_graph"
+        app:startDestination="@id/home_dest">
+
+        <fragment
+            android:id="@+id/logIn_dest"
+            android:name="coop.qrsc.LoginFragment"
+            android:label="@string/login_fragment"
+            tools:layout="@layout/login_fragment" />
+
+        <fragment
+            android:id="@+id/emailPasswordLogin_dest"
+            android:name="coop.qrsc.EmailPasswordFragment"
+            android:label="@string/emailPasswordLogin"
+            tools:layout="@layout/emailpassword_fragment" />
+
+    </navigation>
 
 </navigation>

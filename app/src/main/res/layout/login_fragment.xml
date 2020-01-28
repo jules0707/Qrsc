@@ -1,25 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".EmailPasswordFragment">
-
-    <TextView
-        android:id="@+id/status"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="end"
-        android:text="@string/signed_out" />
-
-
-    <TextView
-        android:id="@+id/detail"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:paddingTop="@dimen/padding_15"
-        tools:text="ID: 123456789abc" />
-
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".LoginFragment">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -38,18 +23,18 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:autofillHints=""
                 android:hint="@string/hint_email"
-                android:inputType="textEmailAddress"
-                android:autofillHints="" />
+                android:inputType="textEmailAddress" />
 
             <EditText
                 android:id="@+id/fieldPassword"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:autofillHints=""
                 android:hint="@string/hint_password"
-                android:inputType="textPassword"
-                android:autofillHints="" />
+                android:inputType="textPassword" />
         </LinearLayout>
 
 
@@ -63,14 +48,14 @@
             android:paddingRight="16dp">
 
             <Button
-                android:id="@+id/emailSignInButton"
+                android:id="@+id/signInButton"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="@string/sign_in" />
 
             <Button
-                android:id="@+id/emailSignUpButton"
+                android:id="@+id/signUpButton"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -108,4 +93,4 @@
 
     </RelativeLayout>
 
-</FrameLayout>
+</LinearLayout>

@@ -12,9 +12,7 @@ class LoginViewModel : ViewModel() {
     }
 
     val authenticationState = MutableLiveData<AuthenticationState>()
-    // TODO original code was a val not a var check for possible BUGS!!!
-    // https://developer.android.com/guide/navigation/navigation-conditional#kotlin
-    private var username = ""
+    var username: String
 
     init {
         // In this example, the user is always unauthenticated when MainActivity is launched
@@ -35,9 +33,12 @@ class LoginViewModel : ViewModel() {
         }
     }
 
+
+    // TODO check that Caution: A ViewModel must never reference a view, Lifecycle, or any class that may hold a reference to the activity context
     private fun passwordIsValidForUsername(username: String, password: String): Boolean {
-        val epf = EmailPasswordFragment()
-        epf.signIn(username,password)
+        val epf = EmailPasswordFragment() // holds a reference to an activity context here??
+        epf.signIn(username, password)
+
         return (epf.isAuthenticated)
     }
 

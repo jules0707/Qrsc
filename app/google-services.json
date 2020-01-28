@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "730702923171-afr0mc26v58cn4ki8o691r61a91176pp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "coop.qrsc",
+            "certificate_hash": "db9bf806a028bb61373038ee0c5beb5f5211c463"
+          }
+        },
+        {
           "client_id": "730702923171-92gjmv1rorg38id60spbupp0m8nla0is.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
